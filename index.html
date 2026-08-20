@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Demo digitalna pozivnica za vjenčanje Katarine i Antonija, 8. 5. 2027."
+    />
+    <title>Katarina & Antonio — Vjenčanje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="invitation-shell" aria-live="polite">
+      <section class="opening-screen" id="openingScreen" aria-label="Otvaranje pozivnice">
+        <button class="envelope-button" id="openInvitation" type="button" aria-label="Otvori pozivnicu za vjenčanje">
+          <span class="envelope" aria-hidden="true">
+            <span class="envelope-flap"></span>
+            <span class="envelope-card">
+              <span>K & A</span>
+            </span>
+            <span class="envelope-front"></span>
+          </span>
+          <span class="open-text">Kliknite za otvaranje pozivnice</span>
+        </button>
+      </section>
+
+      <section class="invitation-card" id="invitationCard" aria-label="Pozivnica za vjenčanje" hidden>
+        <div class="pressed-flower flower-left" aria-hidden="true"></div>
+        <div class="pressed-flower flower-right" aria-hidden="true"></div>
+
+        <p class="eyebrow">S ljubavlju vas pozivamo</p>
+        <h1>Katarina <span>&amp;</span> Antonio</h1>
+        <p class="date">8. 5. 2027.</p>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <p class="message">
+          Radujemo se što ćemo početak našeg zajedničkog života proslaviti u krugu ljudi koje volimo.
+          Bilo bi nam posebno drago da svojim dolaskom, osmijehom i lijepim željama budete dio našeg
+          vjenčanog dana.
+        </p>
+
+        <section class="timeline" aria-labelledby="timelineTitle">
+          <p class="section-kicker">Plan dana</p>
+          <h2 id="timelineTitle">Vremenska linija</h2>
+
+          <article class="event-card">
+            <time datetime="2027-05-08T13:00">13:00</time>
+            <div>
+              <h3>Okupljanje</h3>
+              <p>Bistro Vidikovac, Kostrena</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Bistro%20Vidikovac%20Kostrena" target="_blank" rel="noopener noreferrer">Pogledaj lokaciju</a>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <time datetime="2027-05-08T14:00">14:00</time>
+            <div>
+              <h3>Vjenčanje</h3>
+              <p>Crkva sv. Margarete, Bakar</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Crkva%20sv.%20Margarete%20Bakar" target="_blank" rel="noopener noreferrer">Pogledaj lokaciju</a>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <time datetime="2027-05-08T16:00">16:00</time>
+            <div>
+              <h3>Proslava</h3>
+              <p>Villa Erzzi, Šetalište maršala Tita 85, Lovran</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Villa%20Erzzi%20%C5%A0etali%C5%A1te%20mar%C5%A1ala%20Tita%2085%20Lovran" target="_blank" rel="noopener noreferrer">Pogledaj lokaciju</a>
+            </div>
+          </article>
+        </section>
+
+        <p class="rsvp">Molimo vas da svoj dolazak potvrdite do <strong>15. 4. 2027.</strong></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
